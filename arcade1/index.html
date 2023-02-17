@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kendall's Tic-Tac-Toe Game</title>
+</head>
+<body>
+    <header>
+        <h1>TIC-TAC-TOE!</h1>
+    </header>
+    <main>
+        <div id="instructions">
+            <h2>Instructions</h2>
+            <ol>
+                <li>Input Player 1 name and select "Add Player 1" button</li>
+                <li>Input Player 2 name and select "Add Player 2" button OR just select the button to play against the Computer</li>
+                <!-- <li>Select "Start Game" button</li> -->
+                <li>Take turns marking each square once to place an "X" or an "O"</li>
+                <li>Try to get 3 in a row before the other player does</li>
+                <li>Have fun and don't forget to play again when you're done!!</li>
+            </ol>
+        </div>
+        <div id="container">
+            <table id="gameBoard">
+                <tr>
+                    <td id="row1Col1"></td>
+                    <td id="row1Col2"></td>
+                    <td id="row1Col3"></td>
+                </tr>
+                <tr>
+                    <td id="row2Col1"></td>
+                    <td id="row2Col2"></td>
+                    <td id="row2Col3"></td>
+                </tr>
+                <tr>
+                    <td id="row3Col1"></td>
+                    <td id="row3Col2"></td>
+                    <td id="row3Col3"></td>
+                </tr>
+            </table>
+        </div>
+        <div id="givePlayersNames">
+            <p class="playersNames" id="player1Name">
+                <label for="player1Name">Player 1 (O) Name:</label>
+                <input id="player1Input" type="text" placeholder="enter Player 1 name">
+                <button id="player1Button">Add Player 1</button>
+            </p>
+            
+            <p class="playersNames" id="player2Name">
+                <label for="player2Name">Player 2 (X) Name:</label>
+                <input id="player2Input" type="text" placeholder="enter Player 2 name">
+                <button id="player2Button">Add Player 2</button>
+            </p>
+        </div>
+        <div class="gameButtons">
+            <!-- <button class="gameButtons" id="startGameButton">Start Game!</button> -->
+            <button class="gameButtons" id="playAgainButton">Play Again!</button>
+        </div>
+    </main>
+</body>
+<script src="./app.js"></script>
+</html>
